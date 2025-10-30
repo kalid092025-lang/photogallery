@@ -36,8 +36,7 @@ section {
    background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-attachment: fixed; /* keeps bg fixed */
-               /* also fixes the container */
+  background-attachment: fixed;
   
   width: 100svw;
   height: 100svh;
@@ -49,11 +48,11 @@ section {
 
 
 #first-img {
-  background-image: url(images/photo4.jpg);
+  background-image: url(images/photo3.jpg);
   
 }
 #second-img {
-  background-image: url(images/photo4.jpg);
+  background-image: url(images/photo3.jpg);
 }
 #third-img {
   background-image: url(images/photo2.jpg);
