@@ -1,0 +1,63 @@
+main {
+  background-color: #fefae0;
+  min-height: 100svh;
+  min-width: 100svw;
+  top: 80px;
+  scroll-behavior: smooth;
+}
+section {
+  min-height: 100svh;
+  min-width: 100svw;
+  text-align: center;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  scroll-behavior: smooth;
+}
+#first {
+  background-color: #ccd5ae;
+}
+#second {
+  background-color: #faedcd;
+}
+#third {
+  background-color: #e9edc9;
+}
+#fourth {
+  background-color: #d4a373;
+}
+
+
+  
+
+.bg-img {
+  background-color: aqua;
+   background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* keeps bg fixed */
+               /* also fixes the container */
+  
+  width: 100svw;
+  height: 100svh;
+  
+ 
+
+}
+
+
+
+#first-img {
+  background-image: url(../images/photo4.jpg);
+  
+}
+#second-img {
+  background-image: url(../images/photo4.jpg);
+}
+#third-img {
+  background-image: url(../images/photo2.jpg);
+}
+#fourth-img {
+  background-image: url(../images/photo4.jpg);
+}
