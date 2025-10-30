@@ -1,62 +1,58 @@
+/* Main layout */
 main {
   background-color: #fefae0;
-  min-height: 100svh;
-  min-width: 100svw;
-  top: 80px;
+  min-height: 100vh;
+  min-width: 100vw;
   scroll-behavior: smooth;
 }
+
+/* Colored sections */
+#first { background-color: #574214; color: #fff; }
+#second { background-color: #506e2e; color: #fff; }
+#third { background-color: #2f4c5f; color: #fff; }
+#fourth { background-color: #251b11; color: #fff; }
+
+/* Section styling */
 section {
-  min-height: 100svh;
-  min-width: 100svw;
+  min-height: 100vh;
+  min-width: 100vw;
   text-align: center;
   padding: 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   scroll-behavior: smooth;
-}
-#first {
-  background-color: #574214;
-}
-#second {
-  background-color: #506e2e;
-}
-#third {
-  background-color: #2f4c5f;
-}
-#fourth {
-  background-color: #251b11;
+  position: relative;
 }
 
-
-  
-
+/* Background image sections */
 .bg-img {
-  background-color: aqua;
-   background-repeat: no-repeat;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Blurred background */
+.blur-bg {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  
-  width: 100svw;
-  height: 100svh;
-  
- 
-
+  filter: blur(6px);
+  z-index: 1; /* behind foreground */
 }
 
-
-
-#first-img {
-  background-image: url(images/photo3.jpg);
-  
-}
-#second-img {
-  background-image: url(images/photo3.jpg);
-}
-#third-img {
-  background-image: url(images/photo2.jpg);
-}
-#fourth-img {
-  background-image: url(images/photo4.jpg);
+/* Foreground images */
+.foreground-img {
+  position: relative;  /* relative to .bg-img */
+  z-index: 2;          /* above blurred background */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 50%;
+  height: auto;
 }
