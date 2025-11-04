@@ -1,67 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="gallery.css" />
-  <link rel="stylesheet" href="gallery.html">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>my project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Grenze:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Jacquard+12&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="javascript.js" defer></script>
 </head>
+
 <body>
-  <!-- ===== NAVBAR ===== -->
-  <nav class="navbar">
-    <ul>
+  <nav class="nav">
+    <ul class="ul">
+      <li class="li"><a href="#home">Home</a></li>
+      <li class="li"><a href="#about">About</a></li>
       
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
 
-  <!-- ===== HERO ===== -->
-  <section id="home" class="hero">
-    <h1>Welcome to My Portfolio</h1>
-    <p>Loading greeting...</p>
-  </section>
+  <header>
+  <h1>My Project</h1>
+</header>
 
-  <!-- ===== PROJECTS ===== -->
-  <section id="projects" class="projects">
-    <h2>My Projects</h2>
-    
-    <div class="gallery"></div>
-    <p id="project-message" class="project-message"></p>
+  <main class="main" id="main">
 
-    <section>
-    <h3><a href="gallery.html">click for more</a></h3>
+    <section class="home" id="home">
+      <h2>Welcome to My Project</h2>
+      <p class="project-message" id="project-message">project message loading...</p>
     </section>
 
-  <!-- ===== ABOUT ===== -->
-  <section id="about" class="about">
-    <h2>About Me</h2>
-    <p>
-      Hi! I'm learning web development and this is my dynamic portfolio. 
-      It demonstrates HTML, CSS, and JavaScript interactivity.
-    </p>
-  </section>
+    <section class="projects" id="projects">
+      <h2>Gallery</h2>
+      <div class="images" id="images">
 
-  <!-- ===== LIGHTBOX ===== -->
-  <div id="lightbox" class="lightbox">
-    <span class="close">&times;</span>
-    <img class="lightbox-content" id="lightbox-img" alt="">
-  </div>
 
-  <!-- ===== CONTACT ===== -->
-  <section id="contact" class="contact">
-    <h2>Contact Me</h2>
-    <p>Get in touch at <a href="mailto:kalid092025@gmail.com">kalid092025@gmail.com</a></p>
-  </section>
+      </div>
 
-  <footer>
-    <p>&copy; 2025 My Portfolio. All rights reserved.</p>
-  </footer>
 
-  <script src="script.js"></script>
+    </section>
+
+    <section class="about-project" id="about-project">
+      <h2>About This Project</h2>
+      <p class="about-message" id="about-message" >about project message loading.</p>
+      <p><a href="gallery.html">favorite moments</a></p>
+    </section>
+
+  </main>
 </body>
 </html>
